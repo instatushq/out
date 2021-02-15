@@ -82,6 +82,7 @@
         "github"
       ]
     },
+    "mas": {
       "darkModeSupport": true,
       "hardenedRuntime" : false,
       "type": "distribution",
