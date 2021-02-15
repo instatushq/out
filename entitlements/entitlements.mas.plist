@@ -5,7 +5,7 @@
     <key>com.apple.security.app-sandbox</key>
     <true/>
     <key>com.apple.security.application-groups</key>
-    <string>com.instatus.out</string>
+    <string>BRJY56MYNC.InstatusOutOne</string>
     <key>com.apple.security.cs.allow-jit</key>
     <true/>
     <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
