@@ -1,0 +1,178 @@
+{
+  "name": "instatus-out",
+  "version": "1.0.0",
+  "description": "Monitor services in your menu bar",
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "webpack --config webpack.prod.js",
+    "watch": "webpack --config webpack.common.js --watch",
+    "make:linux": "electron-builder --linux",
+    "make:macos": "electron-builder --mac --x64 --arm64",
+    "make:macos:x64": "electron-builder --mac --x64",
+    "make:macos:arm64": "electron-builder --mac --arm64",
+    "make:win": "electron-builder --win",
+    "prettier:check": "prettier --check 'src/**/*.{js,ts,tsx}'",
+    "prettier:apply": "prettier --write 'src/**/*.{js,ts,tsx}'",
+    "jest": "jest",
+    "test": "yarn jest",
+    "start": "electron . -–enable-logging"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/instatushq/out.git"
+  },
+  "keywords": [
+    "instatus out",
+    "monitoring",
+    "services",
+    "cloud",
+    "out",
+    "instatus",
+    "electron",
+    "atom",
+    "shell",
+    "app",
+    "tray"
+  ],
+  "author": {
+    "name": "Instatus",
+    "email": "hello@instatus.com"
+  },
+  "contributors": [
+    {
+      "name": "Ali Salah",
+      "url": "https://github.com/alisalahio"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/instatushq/out/issues"
+  },
+  "homepage": "https://instatus.com/out",
+  "build": {
+    "appId": "com.instatus.out",
+    "productName": "Instatus Out",
+    "files": [
+      "build/**/*",
+      "assets/**/*",
+      "index.html",
+      "LICENSE",
+      "main.js",
+      "first-run.js"
+    ],
+    "directories": {
+      "buildResources": "buildResources",
+      "output": "dist"
+    },
+    "mac": {
+      "type": "distribution",
+      "target": ["mas", "pkg", "dmg"],
+      "artifactName": "${productName}-${version}-${os}.${ext}",
+      "icon": "assets/images/icon.icns",
+      "category": "public.app-category.developer-tools",
+      "identity": "Instatus, Inc. (BRJY56MYNC)",
+      "gatekeeperAssess": false,
+      "darkModeSupport": true,
+      "hardenedRuntime" : false,
+      "entitlements": "./entitlements/entitlements.mac.plist",
+      "entitlementsInherit": "./entitlements/entitlements.mac.plist",
+      "publish": [
+        "github"
+      ]
+    },
+      "darkModeSupport": true,
+      "hardenedRuntime" : false,
+      "type": "distribution",
+      "category": "public.app-category.developer-tools",
+      "entitlements": "./entitlements/entitlements.mas.plist",
+      "entitlementsInherit": "./entitlements/entitlements.mas.inherit.plist",
+      "provisioningProfile": "./entitlements/cominstatusout.provisionprofile"
+    },
+    "dmg": {
+      "icon": "assets/images/icon.icns",
+      "sign": false
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/images/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Development",
+      "maintainer": "Instatus"
+    },
+    "afterSign": "scripts/notarize.js"
+  },
+  "dependencies": {
+    "@primer/octicons-react": "^12.0.0",
+    "autoprefixer": "^10.2.4",
+    "axios": "=0.21.1",
+    "classnames": "^2.2.6",
+    "date-fns": "^2.17.0",
+    "electron-store": "^7.0.1",
+    "electron-updater": "^4.3.5",
+    "final-form": "^4.20.1",
+    "js-search": "^2.0.0",
+    "lodash": "^4.17.20",
+    "menubar": "^9.0.2",
+    "nprogress": "=0.2.0",
+    "postcss": "^8.2.6",
+    "react": "=17.0.1",
+    "react-dom": "=17.0.1",
+    "react-emojione": "=5.0.1",
+    "react-final-form": "^6.5.2",
+    "react-router-dom": "^5.2.0",
+    "react-transition-group": "^4.4.1",
+    "react-typist": "^2.0.5",
+    "tailwindcss": "^2.0.3",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/react-hooks": "^5.0.3",
+    "@types/jest": "^26.0.20",
+    "@types/lodash": "^4.14.168",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/react-transition-group": "^4.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^5.0.2",
+    "electron": "^11.2.3",
+    "electron-builder": "^22.9.1",
+    "electron-notarize": "^1.0.0",
+    "eslint": "7.19.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-wesbos": "1.0.1",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "jest": "^26.6.3",
+    "nock": "^13.0.7",
+    "postcss-loader": "^5.0.0",
+    "prettier": "^2.2.1",
+    "react-test-renderer": "=17.0.1",
+    "style-loader": "^2.0.0",
+    "ts-jest": "^26.5.1",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-merge": "^5.7.3"
+  }
+}
