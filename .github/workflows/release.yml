@@ -36,7 +36,7 @@ jobs:
           CSC_KEY_PASSWORD: ${{ secrets.mac_certs_password }}
           GH_TOKEN: ${{ secrets.gh_token }}
           NOTARIZE: true
-        run: yarn make:macos --publish onTagOrDraft
+        run: yarn make:macos --publish always
 
   release-windows:
     runs-on: windows-2019
@@ -63,7 +63,7 @@ jobs:
       - name: Publish Windows (electron-builder)
         env:
           GH_TOKEN: ${{ secrets.gh_token }}
-        run: yarn make:win --publish onTagOrDraft
+        run: yarn make:win --publish always
 
   release-linux:
     runs-on: ubuntu-18.04
@@ -90,4 +90,4 @@ jobs:
       - name: Publish Linuxs (electron-builder)
         env:
           GH_TOKEN: ${{ secrets.gh_token }}
-        run: yarn make:linux --publish onTagOrDraft
+        run: yarn make:linux --publish always
