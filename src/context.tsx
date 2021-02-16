@@ -100,7 +100,7 @@ export const Provider = ({ children }: { children: React.ReactNode }) => {
 
     const newSettings = { ...settings, [name]: value }
     setSettings(newSettings)
-    saveState(settings, selected)
+    saveState(newSettings, selected)
   }
 
   const add = (item: string) => {
