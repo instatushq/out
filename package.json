@@ -68,20 +68,28 @@
     },
     "mac": {
       "type": "distribution",
-      "target": ["dmg"],
+      "target": ["mas", "pkg", "dmg"],
       "artifactName": "${productName}-${version}-${os}.${ext}",
       "icon": "assets/images/icon.icns",
       "category": "public.app-category.developer-tools",
       "identity": "Instatus, Inc. (BRJY56MYNC)",
       "gatekeeperAssess": false,
       "darkModeSupport": true,
-      "hardenedRuntime": false,
+      "hardenedRuntime" : false,
       "entitlements": "./entitlements/entitlements.mac.plist",
       "entitlementsInherit": "./entitlements/entitlements.mac.plist",
-      "provisioningProfile": "./entitlements/cominstatusout.provisionprofile",
       "publish": [
         "github"
       ]
+    },
+    "mas": {
+      "darkModeSupport": true,
+      "hardenedRuntime" : false,
+      "type": "distribution",
+      "category": "public.app-category.developer-tools",
+      "entitlements": "./entitlements/entitlements.mas.plist",
+      "entitlementsInherit": "./entitlements/entitlements.mas.inherit.plist",
+      "provisioningProfile": "./entitlements/cominstatusout.provisionprofile"
     },
     "dmg": {
       "icon": "assets/images/icon.icns",
