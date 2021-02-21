@@ -3,6 +3,7 @@ import Service from './service'
 // Intatus services
 import Instatus from './instatus/instatus'
 import Sketch from './instatus/sketch'
+import Linear from './instatus/linear'
 import Freecodecamp from './instatus/freecodecamp'
 
 // Statuspage services
@@ -130,7 +131,8 @@ import AWS from './aws'
 const allServices = new Map<string, Service>([
   // Instatus pages
   ['Instatus', new Instatus()],
-  ['Sketch', new Sketch()],
+  ['SketchCloud', new Sketch()],
+  ['Linear', new Linear()],
   ['Freecodecamp', new Freecodecamp()],
 
   // Statuspage pages
