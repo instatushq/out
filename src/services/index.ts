@@ -4,7 +4,6 @@ import Service from './service'
 import Instatus from './instatus/instatus'
 import Sketch from './instatus/sketch'
 import Freecodecamp from './instatus/freecodecamp'
-import Geschafft from './instatus/geschafft'
 
 // Statuspage services
 import Acquia from './statuspage/acquia'
@@ -138,7 +137,6 @@ const allServices = new Map<string, Service>([
   ['Instatus', new Instatus()],
   ['Sketch', new Sketch()],
   ['Freecodecamp', new Freecodecamp()],
-  ['Geschafft', new Geschafft()],
 
   // Statuspage pages
   ['Acquia', new Acquia()],
