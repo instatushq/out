@@ -112,6 +112,11 @@ import Wodby from './statuspage/wodby'
 import Zapier from './statuspage/zapier'
 import Zoom from './statuspage/zoom'
 import Zwift from './statuspage/zwift'
+import TwitterAPI from './statuspage/twitterapi'
+import Netlify from './statuspage/netlify'
+import Netdata from './statuspage/netdata'
+import cdnjs from './statuspage/cdnjs'
+import EpicGames from './statuspage/epicgames'
 
 // Status.io services
 import Cloud66 from './statusio/cloud66'
@@ -241,6 +246,11 @@ const allServices = new Map<string, Service>([
   ['Zapier', new Zapier()],
   ['Zoom', new Zoom()],
   ['Zwift', new Zwift()],
+  ['TwitterAPI', new TwitterAPI()],
+  ['Netlify', new Netlify()],
+  ['Netdata', new Netdata()],
+  ['cdnjs', new cdnjs()],
+  ['EpicGames', new EpicGames()],
 
   // Status.io pages
   ['Cloud66', new Cloud66()],

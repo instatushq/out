@@ -75,7 +75,7 @@
       "identity": "Instatus, Inc. (BRJY56MYNC)",
       "gatekeeperAssess": false,
       "darkModeSupport": true,
-      "hardenedRuntime" : false,
+      "hardenedRuntime": false,
       "entitlements": "./entitlements/entitlements.mac.plist",
       "entitlementsInherit": "./entitlements/entitlements.mac.plist",
       "provisioningProfile": "./entitlements/cominstatusout.provisionprofile",
