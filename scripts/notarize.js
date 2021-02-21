@@ -1,7 +1,6 @@
 const { notarize } = require('electron-notarize')
 
-const packageJson = require('../package.json')
-const appBundleId = packageJson.build.appId
+const appBundleId = process.env.appId
 
 const notarizeApp = async (context) => {
   const { electronPlatformName, appOutDir } = context

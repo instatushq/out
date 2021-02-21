@@ -1,0 +1,37 @@
+directories:
+  output: release
+appId: com.instatus.out
+asar: null
+productName: Instatus Out
+files:
+  - dist/
+  - from: dist/
+    to: "."
+    filter: index.js
+  - embedded.provisionprofile
+  - build/**/*
+  - assets/**/*
+  - index.html
+  - LICENSE
+  - main.js
+  - first-run.js
+mac:
+  category: public.app-category.developer-tools
+  entitlements: build/entitlements.mac.plist
+  hardenedRuntime: false
+  gatekeeperAssess: false
+  icon: assets/images/app.icns
+  identity: Instatus, Inc. (BRJY56MYNC)
+  type: distribution
+  target:
+    - mas
+mas:
+  asarUnpack: []
+  hardenedRuntime: false
+  gatekeeperAssess: false
+  category: public.app-category.developer-tools
+  entitlements: build/entitlements.mas.plist
+  provisioningProfile: build/embedded.provisionprofile
+  entitlementsInherit: build/entitlements.mas.inherit.plist
+  icon: assets/images/app.icns
+afterSign: scripts/notarize.js
