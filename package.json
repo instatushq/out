@@ -68,7 +68,7 @@
     },
     "mac": {
       "type": "distribution",
-      "target": "mas",
+      "target": ["dmg"],
       "artifactName": "${productName}-${version}-${os}.${ext}",
       "icon": "assets/images/icon.icns",
       "category": "public.app-category.developer-tools",
