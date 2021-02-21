@@ -2,15 +2,9 @@ import React, { useState, createContext, useEffect } from 'react'
 import * as JsSearch from 'js-search'
 
 import { Appearance, SettingsState } from './types'
-import Instatus from './services/instatus/instatus'
 import { setOpenAtStartup } from './utils/comms'
 import allServices from './services'
-import Vercel from './services/statuspage/vercel'
-import Cloudflare from './services/statuspage/cloudflare'
-import Dropbox from './services/statuspage/dropbox'
-import Zoom from './services/statuspage/zoom'
 import { setAppearance } from './utils/set-mode'
-import Github from './services/statuspage/github'
 import useInterval from './utils/use-interval'
 import { loadState, saveState } from './utils/storage'
 import Service from './services/service'
@@ -35,7 +29,7 @@ export const defaultSettings: SettingsState = {
   playSound: false,
 }
 
-const defaultSelected = [Instatus.name, Vercel.name, Github.name, Dropbox.name, Zoom.name, Cloudflare.name]
+const defaultSelected = ['Instatus', 'Vercel', 'Github', 'Dropbox', 'Zoom', 'Cloudflare']
 
 export const Context = createContext<Partial<ContextState>>({})
 
