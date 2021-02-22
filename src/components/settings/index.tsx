@@ -90,7 +90,7 @@ const Settings = () => {
         </div>
         <div className="flex items-center justify-between">
           <button
-            onClick={() => shell.openExternal('https://instatus.com')}
+            onClick={() => shell.openExternal('https://instatus.com/out')}
             className="w-5 h-5 focus:outline-none"
           >
             <LogoIcon />
