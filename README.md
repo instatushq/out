@@ -27,59 +27,58 @@
 You can download the latest version from here:
 
 <div>
-  <a href="https://github.com/instatushq/out/releases/download/v1.0.1/Instatus.Out.Setup.1.0.1.exe">
+  <a href="https://github.com/instatushq/out/suites/2089264035/artifacts/42362216">
     <img width="15" height="15" src="https://user-images.githubusercontent.com/1072229/106638253-591f9180-658c-11eb-9a68-1fe9a581816d.png" alt="Windows logo" /> 
     <img src="https://img.spacergif.org/v1/spacer.gif" width="2" height="1">
     Windows
   </a>
   <br />
-  <a href="https://github.com/instatushq/out/releases/download/v1.0.1/Instatus.Out-1.0.1.dmg">
+  <a href="https://github.com/instatushq/out/suites/2089374860/artifacts/42365290">
     <img width="15" height="15" src="https://user-images.githubusercontent.com/1072229/106638530-a6036800-658c-11eb-8e40-a868cfc5efe6.png" alt="macOS logo" />
     <img src="https://img.spacergif.org/v1/spacer.gif" width="2" height="1">
       macOS
   </a>
   <br />
-    <a href="https://github.com/instatushq/out/releases/download/v1.0.1/Instatus.Out-1.0.1.AppImage">
+    <a href="https://github.com/instatushq/out/suites/2089264035/artifacts/42362214">
     <img width="15" height="15" src="https://user-images.githubusercontent.com/1072229/106638818-f084e480-658c-11eb-92c3-b8c2ed89aa02.png" alt="Linux logo" /> 
     <img src="https://img.spacergif.org/v1/spacer.gif" width="2" height="1">
-    Linux (.AppImage)
+    Linux
   </a>
   <br />
-  <a href="https://github.com/instatushq/out/releases/download/v1.0.1/instatus-out_1.0.1_amd64.deb">
-    <img width="15" height="15" src="https://user-images.githubusercontent.com/1072229/106638818-f084e480-658c-11eb-92c3-b8c2ed89aa02.png" alt="Linux logo" /> 
-    <img src="https://img.spacergif.org/v1/spacer.gif" width="2" height="1">
-    Linux (.deb)
-  </a>
 </div>
 
 ## Features
 
 * Select services you use
+* check their status in your menu bar
 * Get notified when they change their status
+* Use on Windows, macOS or Linux
 * Dark / light mode
 * Open at startup
 * No signup needed
-* Use on Windows, macOS or Linux
+* Decentralized: Runs on your device, and directly checks status pages for updates
 
 ## Contribute
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js 12+](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/)) package manager. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js 12+](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) package manager. 
+
+From your command line:
 
 ```bash
-# Clone this repository
+# Clone the rirepo
 $ git clone https://github.com/instatushq/out
 
-# Go into the repository
+# Go into it
 $ cd out
 
 # Install dependencies
 $ yarn
 
 # Run the app
-To watch for changes(`webpack`) in the `src` directory:
+# To watch for changes(`webpack`) in the `src` directory:
 $ yarn watch
 
-In the root directory:
+# In the `root` directory:
 $ yarn start
 
 ```
@@ -94,7 +93,7 @@ Instatus Out uses these open-source packages:
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
-I jump-started it using these open-source packages:
+Jump-started using these open-source packages:
 - [Gitify](https://github.com/manosim/gitify)
 - [stts](https://github.com/inket/stts)
 
@@ -105,5 +104,4 @@ MIT
 ---
 
 ## Made by
-> [Instatus.com](https://instatus.com) – Get a quick & beautiful status page
-> [@alisalahio](https://twitter.com/alisalahio) – Ali Salah
+[Instatus.com](https://instatus.com) – Get a quick & beautiful status page ([@alisalahio](https://twitter.com/alisalahio))
