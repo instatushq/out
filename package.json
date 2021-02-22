@@ -1,6 +1,6 @@
 {
   "name": "instatus-out",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Monitor services in your menu bar",
   "main": "main.js",
   "scripts": {
@@ -75,7 +75,7 @@
       "identity": "Instatus, Inc. (BRJY56MYNC)",
       "gatekeeperAssess": false,
       "darkModeSupport": true,
-      "hardenedRuntime" : false,
+      "hardenedRuntime" : true,
       "entitlements": "./entitlements/entitlements.mac.plist",
       "entitlementsInherit": "./entitlements/entitlements.mac.plist",
       "publish": [
