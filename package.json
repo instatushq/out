@@ -67,7 +67,6 @@
       "output": "dist"
     },
     "mac": {
-      "type": "distribution",
       "target": ["dmg", "zip"],
       "artifactName": "${productName}-${version}-${os}.${ext}",
       "icon": "assets/images/icon.icns",
@@ -82,18 +81,9 @@
         "github"
       ]
     },
-    "mas": {
-      "darkModeSupport": true,
-      "hardenedRuntime" : false,
-      "type": "distribution",
-      "category": "public.app-category.developer-tools",
-      "entitlements": "./entitlements/entitlements.mas.plist",
-      "entitlementsInherit": "./entitlements/entitlements.mas.inherit.plist",
-      "provisioningProfile": "./entitlements/cominstatusout.provisionprofile"
-    },
     "dmg": {
       "icon": "assets/images/icon.icns",
-      "sign": false
+      "sign": true
     },
     "win": {
       "target": "nsis",
