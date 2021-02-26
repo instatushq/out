@@ -11,8 +11,8 @@ class Slack extends Service {
   async updateStatus(settings: SettingsState) {
     const summary = await axios.get(`${this.domain}/api/v2.0.0/current`)
 
-    if (summary.data.status === 'active') {
-      switch (summary.data.type) {
+    if (summary?.data?.status === 'active') {
+      switch (summary?.data?.type) {
         case 'incident':
           this.status = Status.MINOR
           break
