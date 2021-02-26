@@ -22,6 +22,8 @@ class Slack extends Service {
         case 'notice':
           this.status = Status.MAINTENANCE
           break
+        default:
+          this.status = Status.OPERATIONAL
       }
     } else {
       this.status = Status.OPERATIONAL
