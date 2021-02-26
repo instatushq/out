@@ -36,6 +36,7 @@ import Contentful from './statuspage/contentful'
 import Coveralls from './statuspage/coveralls'
 import Datadog from './statuspage/datadog'
 import DatadogEU from './statuspage/datadogeu'
+import DigitalOcean from './statuspage/digitalocean'
 import Discord from './statuspage/discord'
 import Dnsimple from './statuspage/dnsimple'
 import Dropbox from './statuspage/dropbox'
@@ -171,6 +172,7 @@ const allServices = new Map<string, Service>([
   ['Coveralls', new Coveralls()],
   ['Datadog', new Datadog()],
   ['DatadogEU', new DatadogEU()],
+  ['DigitalOcean', new DigitalOcean()],
   ['Discord', new Discord()],
   ['Dnsimple', new Dnsimple()],
   ['Dropbox', new Dropbox()],
