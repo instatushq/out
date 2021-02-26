@@ -136,6 +136,7 @@ import Stripe from './stripe'
 import Heroku from './heroku'
 import AWS from './aws'
 import Postmark from './postmark'
+import Slack from './slack'
 
 const allServices = new Map<string, Service>([
   // Instatus pages
@@ -274,6 +275,7 @@ const allServices = new Map<string, Service>([
   ['Heroku', new Heroku()],
   ['AWS', new AWS()],
   ['Postmark', new Postmark()],
+  ['Slack', new Slack()],
 ])
 
 export default allServices
