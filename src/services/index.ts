@@ -44,6 +44,7 @@ import Egnyte from './statuspage/egnyte'
 import Elasticcloud from './statuspage/elasticcloud'
 import Engineyard from './statuspage/engineyard'
 import Fastly from './statuspage/fastly'
+import Fauna from './statuspage/fauna'
 import Figma from './statuspage/figma'
 import Filestack from './statuspage/filestack'
 import FiveTran from './statuspage/fivetran'
@@ -178,6 +179,7 @@ const allServices = new Map<string, Service>([
   ['Egnyte', new Egnyte()],
   ['Elasticcloud', new Elasticcloud()],
   ['Engineyard', new Engineyard()],
+  ['Fauna', new Fauna()],
   ['Fastly', new Fastly()],
   ['Figma', new Figma()],
   ['Filestack', new Filestack()],
