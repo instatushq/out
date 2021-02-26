@@ -135,6 +135,7 @@ import Algolia from './algolia'
 import Stripe from './stripe'
 import Heroku from './heroku'
 import AWS from './aws'
+import Postmark from './postmark'
 
 const allServices = new Map<string, Service>([
   // Instatus pages
@@ -272,6 +273,7 @@ const allServices = new Map<string, Service>([
   ['Stripe', new Stripe()],
   ['Heroku', new Heroku()],
   ['AWS', new AWS()],
+  ['Postmark', new Postmark()],
 ])
 
 export default allServices
