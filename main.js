@@ -25,6 +25,7 @@ const browserWindowOpts = {
   minHeight: 400,
   resizable: false,
   transparent: true,
+  icon: process.platform === 'win32' ? iconIdleWindows : iconIdleMacOS,
   webPreferences: {
     enableRemoteModule: true,
     overlayScrollbars: true,
