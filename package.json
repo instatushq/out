@@ -87,7 +87,7 @@
     },
     "win": {
       "target": "nsis",
-      "icon": "assets/images/icon.ico"
+      "icon": "assets/images/app-icon.ico"
     },
     "nsis": {
       "oneClick": false
