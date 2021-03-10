@@ -8,6 +8,7 @@ import Freecodecamp from './instatus/freecodecamp'
 
 // Statuspage services
 import Acquia from './statuspage/acquia'
+import Airtable from './statuspage/airtable'
 import AmazeeIO from './statuspage/amazeeio'
 import Aptible from './statuspage/aptible'
 import Asana from './statuspage/asana'
@@ -147,6 +148,7 @@ const allServices = new Map<string, Service>([
 
   // Statuspage pages
   ['Acquia', new Acquia()],
+  ['Airtable', new Airtable()],
   ['AmazeeIO', new AmazeeIO()],
   ['Aptible', new Aptible()],
   ['Asana', new Asana()],
