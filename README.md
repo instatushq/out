@@ -27,19 +27,19 @@
 You can download the latest version from here:
 
 <div>
-  <a href="https://github.com/instatushq/out/suites/2089264035/artifacts/42362216">
+  <a href="https://instatus.com/out/download/windows">
     <img width="15" height="15" src="https://user-images.githubusercontent.com/1072229/106638253-591f9180-658c-11eb-9a68-1fe9a581816d.png" alt="Windows logo" /> 
     <img src="https://img.spacergif.org/v1/spacer.gif" width="2" height="1">
     Windows
   </a>
   <br />
-  <a href="https://github.com/instatushq/out/suites/2089374860/artifacts/42365290">
+  <a href="https://instatus.com/out/download/mac">
     <img width="15" height="15" src="https://user-images.githubusercontent.com/1072229/106638530-a6036800-658c-11eb-8e40-a868cfc5efe6.png" alt="macOS logo" />
     <img src="https://img.spacergif.org/v1/spacer.gif" width="2" height="1">
       macOS
   </a>
   <br />
-    <a href="https://github.com/instatushq/out/suites/2089264035/artifacts/42362214">
+    <a href="https://instatus.com/out/download/linux">
     <img width="15" height="15" src="https://user-images.githubusercontent.com/1072229/106638818-f084e480-658c-11eb-92c3-b8c2ed89aa02.png" alt="Linux logo" /> 
     <img src="https://img.spacergif.org/v1/spacer.gif" width="2" height="1">
     Linux
