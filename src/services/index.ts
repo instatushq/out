@@ -122,6 +122,7 @@ import Netdata from './statuspage/netdata'
 import cdnjs from './statuspage/cdnjs'
 import EpicGames from './statuspage/epicgames'
 import PlatformSH from './statuspage/platformsh'
+import GovCMS from './statuspage/govcms'
 
 // Status.io services
 import Cloud66 from './statusio/cloud66'
@@ -195,6 +196,7 @@ const allServices = new Map<string, Service>([
   ['FiveTran', new FiveTran()],
   ['Gandi', new Gandi()],
   ['Github', new Github()],
+  ['GovCMS', new GovCMS()],
   ['Hipchat', new Hipchat()],
   ['Hubspot', new Hubspot()],
   ['Imgix', new Imgix()],
