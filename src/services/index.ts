@@ -121,6 +121,7 @@ import Netlify from './statuspage/netlify'
 import Netdata from './statuspage/netdata'
 import cdnjs from './statuspage/cdnjs'
 import EpicGames from './statuspage/epicgames'
+import PlatformSH from './statuspage/platformsh'
 
 // Status.io services
 import Cloud66 from './statusio/cloud66'
@@ -164,6 +165,7 @@ const allServices = new Map<string, Service>([
   ['Buildkite', new Buildkite()],
   ['Bullhorn', new Bullhorn()],
   ['CampaignMonitor', new CampaignMonitor()],
+  ['cdnjs', new cdnjs()],
   ['CircleCI', new CircleCI()],
   ['CloudApp', new CloudApp()],
   ['Cloudflare', new Cloudflare()],
@@ -183,6 +185,7 @@ const allServices = new Map<string, Service>([
   ['Dropbox', new Dropbox()],
   ['Dwolla', new Dwolla()],
   ['Egnyte', new Egnyte()],
+  ['EpicGames', new EpicGames()],
   ['Elasticcloud', new Elasticcloud()],
   ['Engineyard', new Engineyard()],
   ['Fauna', new Fauna()],
@@ -220,6 +223,7 @@ const allServices = new Map<string, Service>([
   ['Papertail', new Papertail()],
   ['Pendo', new Pendo()],
   ['PivotalTracker', new PivotalTracker()],
+  ['PlatformSH', new PlatformSH()],
   ['Pubnub', new Pubnub()],
   ['Pusher', new Pusher()],
   ['Python', new Python()],
@@ -259,8 +263,6 @@ const allServices = new Map<string, Service>([
   ['TwitterAPI', new TwitterAPI()],
   ['Netlify', new Netlify()],
   ['Netdata', new Netdata()],
-  ['cdnjs', new cdnjs()],
-  ['EpicGames', new EpicGames()],
 
   // Status.io pages
   ['Cloud66', new Cloud66()],
