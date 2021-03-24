@@ -25,6 +25,7 @@ class StatusPageService extends Service {
       case 'minor':
         this.status = Status.MINOR
         break
+      case 'major':
       case 'critical':
         this.status = Status.MAJOR
         break
