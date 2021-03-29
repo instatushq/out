@@ -24,6 +24,7 @@ import Braintree from './statuspage/braintree'
 import Buildkite from './statuspage/buildkite'
 import Bullhorn from './statuspage/bullhorn'
 import CampaignMonitor from './statuspage/campaignmonitor'
+import cdnjs from './statuspage/cdnjs'
 import CircleCI from './statuspage/circleci'
 import CloudApp from './statuspage/cloudapp'
 import Cloudflare from './statuspage/cloudflare'
@@ -45,6 +46,7 @@ import Dwolla from './statuspage/dwolla'
 import Egnyte from './statuspage/egnyte'
 import Elasticcloud from './statuspage/elasticcloud'
 import Engineyard from './statuspage/engineyard'
+import EpicGames from './statuspage/epicgames'
 import Fastly from './statuspage/fastly'
 import Fauna from './statuspage/fauna'
 import Figma from './statuspage/figma'
@@ -52,6 +54,7 @@ import Filestack from './statuspage/filestack'
 import FiveTran from './statuspage/fivetran'
 import Gandi from './statuspage/gandi'
 import Github from './statuspage/github'
+import GovCMS from './statuspage/govcms'
 import Hipchat from './statuspage/hipchat'
 import Hubspot from './statuspage/hubspot'
 import Imgix from './statuspage/imgix'
@@ -71,6 +74,8 @@ import Mediatemple from './statuspage/mediatemple'
 import Mixpanel from './statuspage/mixpanel'
 import Mural from './statuspage/mural'
 import Newrelic from './statuspage/newrelic'
+import Netdata from './statuspage/netdata'
+import Netlify from './statuspage/netlify'
 import Notion from './statuspage/notion'
 import Npm from './statuspage/npm'
 import OnePassword from './statuspage/onepassword'
@@ -80,6 +85,7 @@ import Pantheon from './statuspage/pantheon'
 import Papertail from './statuspage/papertrail'
 import Pendo from './statuspage/pendo'
 import PivotalTracker from './statuspage/pivotaltracker'
+import PlatformSH from './statuspage/platformsh'
 import Pubnub from './statuspage/pubnub'
 import Pusher from './statuspage/pusher'
 import Python from './statuspage/python'
@@ -92,6 +98,7 @@ import Robinhood from './statuspage/robinhood'
 import Rollbar from './statuspage/rollbar'
 import Rubygems from './statuspage/rubygems'
 import SauceLabs from './statuspage/saucelabs'
+import Section from './statuspage/section'
 import Segment from './statuspage/segment'
 import SendGrid from './statuspage/sendgrid'
 import Sentry from './statuspage/sentry'
@@ -105,6 +112,7 @@ import Stream from './statuspage/stream'
 import TravisCI from './statuspage/travisci'
 import Trello from './statuspage/trello'
 import Twilio from './statuspage/twilio'
+import TwitterAPI from './statuspage/twitterapi'
 import Typeform from './statuspage/typeform'
 import Unsplash from './statuspage/unsplash'
 import UrbanAirship from './statuspage/urbanairship'
@@ -116,13 +124,6 @@ import Wodby from './statuspage/wodby'
 import Zapier from './statuspage/zapier'
 import Zoom from './statuspage/zoom'
 import Zwift from './statuspage/zwift'
-import TwitterAPI from './statuspage/twitterapi'
-import Netlify from './statuspage/netlify'
-import Netdata from './statuspage/netdata'
-import cdnjs from './statuspage/cdnjs'
-import EpicGames from './statuspage/epicgames'
-import PlatformSH from './statuspage/platformsh'
-import GovCMS from './statuspage/govcms'
 
 // Status.io services
 import Cloud66 from './statusio/cloud66'
@@ -215,6 +216,8 @@ const allServices = new Map<string, Service>([
   ['Mediatemple', new Mediatemple()],
   ['Mixpanel', new Mixpanel()],
   ['Mural', new Mural()],
+  ['Netdata', new Netdata()],
+  ['Netlify', new Netlify()],
   ['Newrelic', new Newrelic()],
   ['Notion', new Notion()],
   ['Npm', new Npm()],
@@ -238,6 +241,7 @@ const allServices = new Map<string, Service>([
   ['Rollbar', new Rollbar()],
   ['Rubygems', new Rubygems()],
   ['SauceLabs', new SauceLabs()],
+  ['Section', new Section()],
   ['Segment', new Segment()],
   ['SendGrid', new SendGrid()],
   ['Sentry', new Sentry()],
@@ -251,6 +255,7 @@ const allServices = new Map<string, Service>([
   ['TravisCI', new TravisCI()],
   ['Trello', new Trello()],
   ['Twilio', new Twilio()],
+  ['TwitterAPI', new TwitterAPI()],
   ['Typeform', new Typeform()],
   ['Unsplash', new Unsplash()],
   ['UrbanAirship', new UrbanAirship()],
@@ -262,9 +267,6 @@ const allServices = new Map<string, Service>([
   ['Zapier', new Zapier()],
   ['Zoom', new Zoom()],
   ['Zwift', new Zwift()],
-  ['TwitterAPI', new TwitterAPI()],
-  ['Netlify', new Netlify()],
-  ['Netdata', new Netdata()],
 
   // Status.io pages
   ['Cloud66', new Cloud66()],
