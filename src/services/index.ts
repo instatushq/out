@@ -134,6 +134,9 @@ import Letsencrypt from './statusio/letsencrypt'
 import Sendinblue from './statusio/sendinblue'
 import Wasabi from './statusio/wasabi'
 
+// Cachet services
+import CleverCloud from './cachet/clevercloud'
+
 // Custom services
 import Algolia from './algolia'
 import Stripe from './stripe'
@@ -276,6 +279,9 @@ const allServices = new Map<string, Service>([
   ['Sendinblue', new Sendinblue()],
   ['Wasabi', new Wasabi()],
   [`Letsencrypt`, new Letsencrypt()],
+
+  // Cachet pages
+  ['Clever Cloud', new CleverCloud()],
 
   // Custom pages
   ['Algolia', new Algolia()],
