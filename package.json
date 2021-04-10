@@ -1,6 +1,6 @@
 {
   "name": "instatus-out",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Monitor services in your menu bar",
   "main": "main.js",
   "scripts": {
