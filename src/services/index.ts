@@ -23,6 +23,7 @@ import Box from './statuspage/box'
 import Braintree from './statuspage/braintree'
 import Buildkite from './statuspage/buildkite'
 import Bullhorn from './statuspage/bullhorn'
+import Buttondown from './statuspage/buttondown'
 import CampaignMonitor from './statuspage/campaignmonitor'
 import cdnjs from './statuspage/cdnjs'
 import CircleCI from './statuspage/circleci'
@@ -169,6 +170,7 @@ const allServices = new Map<string, Service>([
   ['Braintree', new Braintree()],
   ['Buildkite', new Buildkite()],
   ['Bullhorn', new Bullhorn()],
+  ['Buttondown', new Buttondown()],
   ['CampaignMonitor', new CampaignMonitor()],
   ['cdnjs', new cdnjs()],
   ['CircleCI', new CircleCI()],
