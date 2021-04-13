@@ -6,6 +6,7 @@ import Sketch from './instatus/sketch'
 import Linear from './instatus/linear'
 import Freecodecamp from './instatus/freecodecamp'
 import Primcloud from './instatus/primcloud'
+import SpaceHey from './instatus/spacehey'
 
 // Statuspage services
 import Acquia from './statuspage/acquia'
@@ -157,6 +158,7 @@ const allServices = new Map<string, Service>([
   ['Linear', new Linear()],
   ['Freecodecamp', new Freecodecamp()],
   ['Primcloud', new Primcloud()],
+  ['SpaceHey', new SpaceHey()],
 
   // Statuspage pages
   ['Acquia', new Acquia()],
