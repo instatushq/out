@@ -138,6 +138,9 @@ import Wasabi from './statusio/wasabi'
 // Cachet services
 import CleverCloud from './cachet/clevercloud'
 
+// Hund services
+import Bitwarden from './hund/bitwarden'
+
 // Custom services
 import Algolia from './algolia'
 import Stripe from './stripe'
@@ -284,6 +287,9 @@ const allServices = new Map<string, Service>([
 
   // Cachet pages
   ['Clever Cloud', new CleverCloud()],
+
+  // Hund pages
+  ['Bitwarden', new Bitwarden()],
 
   // Custom pages
   ['Algolia', new Algolia()],
