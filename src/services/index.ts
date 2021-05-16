@@ -111,6 +111,7 @@ import Snyk from './statuspage/snyk'
 import Spoke from './statuspage/spoke'
 import Squarespace from './statuspage/squarespace'
 import Statuspage from './statuspage/statuspage'
+import Supabase from './statuspage/supabase'
 import Stream from './statuspage/stream'
 import TravisCI from './statuspage/travisci'
 import Trello from './statuspage/trello'
@@ -263,6 +264,7 @@ const allServices = new Map<string, Service>([
   ['Spoke', new Spoke()],
   ['Squarespace', new Squarespace()],
   ['Statuspage', new Statuspage()],
+  ['Supabase', new Supabase()],
   ['Stream', new Stream()],
   ['TravisCI', new TravisCI()],
   ['Trello', new Trello()],
