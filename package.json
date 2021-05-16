@@ -60,7 +60,8 @@
       "index.html",
       "LICENSE",
       "main.js",
-      "first-run.js"
+      "first-run.js",
+      "store.js"
     ],
     "directories": {
       "buildResources": "buildResources",

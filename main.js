@@ -1,8 +1,16 @@
 const { ipcMain, app, session } = require('electron')
 const { menubar } = require('menubar')
 const { autoUpdater } = require('electron-updater')
-const { onFirstRunMaybe } = require('./first-run')
-const path = require('path')
+const path = require('path');
+const { onFirstRunMaybe } = require('./first-run');
+const { Store } = require('./store');
+
+const store = new Store({
+  configName: 'preferences',
+  defaults: {
+    windowSize: { height: 400 },
+  },
+});
 
 const iconIdleMacOS = path.join(
   __dirname,
@@ -18,12 +26,14 @@ const iconIdleWindows = path.join(
   'tray-windows.ico'
 )
 
+const { height } = store.get('windowSize');
 const browserWindowOpts = {
   width: 460,
-  height: 400,
+  height,
   minWidth: 460,
   minHeight: 400,
-  resizable: false,
+  maxWidth: 460,
+  resizable: true,
   transparent: true,
   icon: process.platform === 'win32' ? iconIdleWindows : iconIdleMacOS,
   webPreferences: {
@@ -70,6 +80,9 @@ menubarApp.on('ready', () => {
       menubarApp.tray.setImage(iconIdleMacOS)
     }
   })
+
+  menubarApp.window.on('resize', () => {
+    const { height } = menubarApp.window.getBounds();
+    store.set('windowSize', { height });
+  });
 })
-
-
