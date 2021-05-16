@@ -5,6 +5,7 @@ import Instatus from './instatus/instatus'
 import Sketch from './instatus/sketch'
 import Linear from './instatus/linear'
 import Freecodecamp from './instatus/freecodecamp'
+import Plausible from './instatus/plausible'
 import Primcloud from './instatus/primcloud'
 import SpaceHey from './instatus/spacehey'
 
@@ -159,6 +160,7 @@ const allServices = new Map<string, Service>([
   ['SketchCloud', new Sketch()],
   ['Linear', new Linear()],
   ['Freecodecamp', new Freecodecamp()],
+  ['Plausible', new Plausible()],
   ['Primcloud', new Primcloud()],
   ['SpaceHey', new SpaceHey()],
 
