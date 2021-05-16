@@ -116,6 +116,7 @@ import Stream from './statuspage/stream'
 import TravisCI from './statuspage/travisci'
 import Trello from './statuspage/trello'
 import Twilio from './statuspage/twilio'
+import Twitch from './statuspage/twitch'
 import TwitterAPI from './statuspage/twitterapi'
 import Typeform from './statuspage/typeform'
 import Unsplash from './statuspage/unsplash'
@@ -269,6 +270,7 @@ const allServices = new Map<string, Service>([
   ['TravisCI', new TravisCI()],
   ['Trello', new Trello()],
   ['Twilio', new Twilio()],
+  ['Twitch', new Twitch()],
   ['TwitterAPI', new TwitterAPI()],
   ['Typeform', new Typeform()],
   ['Unsplash', new Unsplash()],
