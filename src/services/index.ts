@@ -5,6 +5,8 @@ import Instatus from './instatus/instatus'
 import Sketch from './instatus/sketch'
 import Linear from './instatus/linear'
 import Freecodecamp from './instatus/freecodecamp'
+import Primcloud from './instatus/primcloud'
+import SpaceHey from './instatus/spacehey'
 
 // Statuspage services
 import Acquia from './statuspage/acquia'
@@ -23,6 +25,7 @@ import Box from './statuspage/box'
 import Braintree from './statuspage/braintree'
 import Buildkite from './statuspage/buildkite'
 import Bullhorn from './statuspage/bullhorn'
+import Buttondown from './statuspage/buttondown'
 import CampaignMonitor from './statuspage/campaignmonitor'
 import cdnjs from './statuspage/cdnjs'
 import CircleCI from './statuspage/circleci'
@@ -108,10 +111,12 @@ import Snyk from './statuspage/snyk'
 import Spoke from './statuspage/spoke'
 import Squarespace from './statuspage/squarespace'
 import Statuspage from './statuspage/statuspage'
+import Supabase from './statuspage/supabase'
 import Stream from './statuspage/stream'
 import TravisCI from './statuspage/travisci'
 import Trello from './statuspage/trello'
 import Twilio from './statuspage/twilio'
+import Twitch from './statuspage/twitch'
 import TwitterAPI from './statuspage/twitterapi'
 import Typeform from './statuspage/typeform'
 import Unsplash from './statuspage/unsplash'
@@ -137,6 +142,9 @@ import Wasabi from './statusio/wasabi'
 // Cachet services
 import CleverCloud from './cachet/clevercloud'
 
+// Hund services
+import Bitwarden from './hund/bitwarden'
+
 // Custom services
 import Algolia from './algolia'
 import Stripe from './stripe'
@@ -151,6 +159,8 @@ const allServices = new Map<string, Service>([
   ['SketchCloud', new Sketch()],
   ['Linear', new Linear()],
   ['Freecodecamp', new Freecodecamp()],
+  ['Primcloud', new Primcloud()],
+  ['SpaceHey', new SpaceHey()],
 
   // Statuspage pages
   ['Acquia', new Acquia()],
@@ -169,6 +179,7 @@ const allServices = new Map<string, Service>([
   ['Braintree', new Braintree()],
   ['Buildkite', new Buildkite()],
   ['Bullhorn', new Bullhorn()],
+  ['Buttondown', new Buttondown()],
   ['CampaignMonitor', new CampaignMonitor()],
   ['cdnjs', new cdnjs()],
   ['CircleCI', new CircleCI()],
@@ -254,10 +265,12 @@ const allServices = new Map<string, Service>([
   ['Spoke', new Spoke()],
   ['Squarespace', new Squarespace()],
   ['Statuspage', new Statuspage()],
+  ['Supabase', new Supabase()],
   ['Stream', new Stream()],
   ['TravisCI', new TravisCI()],
   ['Trello', new Trello()],
   ['Twilio', new Twilio()],
+  ['Twitch', new Twitch()],
   ['TwitterAPI', new TwitterAPI()],
   ['Typeform', new Typeform()],
   ['Unsplash', new Unsplash()],
@@ -282,6 +295,9 @@ const allServices = new Map<string, Service>([
 
   // Cachet pages
   ['Clever Cloud', new CleverCloud()],
+
+  // Hund pages
+  ['Bitwarden', new Bitwarden()],
 
   // Custom pages
   ['Algolia', new Algolia()],

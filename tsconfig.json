@@ -19,6 +19,7 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "first-run.js",
+    "store.js",
     "main.js"
   ]
 }
