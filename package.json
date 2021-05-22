@@ -68,6 +68,9 @@
       "output": "dist"
     },
     "mac": {
+      "extendInfo":{
+        "LSUIElement": "true"
+      },
       "target": ["dmg", "zip"],
       "artifactName": "${productName}-${version}-${os}.${ext}",
       "icon": "assets/images/icon.icns",
