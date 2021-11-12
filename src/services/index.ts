@@ -74,6 +74,7 @@ import Linode from './statuspage/linode'
 import Loggly from './statuspage/loggly'
 import Mailgun from './statuspage/mailgun'
 import Mapbox from './statuspage/mapbox'
+import Maven from './statuspage/maven'
 import Mediatemple from './statuspage/mediatemple'
 import Mixpanel from './statuspage/mixpanel'
 import Mural from './statuspage/mural'
@@ -229,6 +230,7 @@ const allServices = new Map<string, Service>([
   ['Linode', new Linode()],
   ['Mailgun', new Mailgun()],
   ['Mapbox', new Mapbox()],
+  ['Maven', new Maven()],
   ['Mediatemple', new Mediatemple()],
   ['Mixpanel', new Mixpanel()],
   ['Mural', new Mural()],
