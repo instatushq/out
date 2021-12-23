@@ -153,6 +153,7 @@ import Heroku from './heroku'
 import AWS from './aws'
 import Postmark from './postmark'
 import Slack from './slack'
+import OhMySMTP from './ohmysmtp'
 
 const allServices = new Map<string, Service>([
   // Instatus pages
@@ -237,6 +238,7 @@ const allServices = new Map<string, Service>([
   ['Newrelic', new Newrelic()],
   ['Notion', new Notion()],
   ['Npm', new Npm()],
+  ['OhMySMTP', new OhMySMTP()],
   ['OnePassword', new OnePassword()],
   ['Packet', new Packet()],
   ['PagerDuty', new PagerDuty()],
