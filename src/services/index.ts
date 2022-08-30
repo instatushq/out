@@ -58,6 +58,7 @@ import Figma from './statuspage/figma'
 import Filestack from './statuspage/filestack'
 import FiveTran from './statuspage/fivetran'
 import Gandi from './statuspage/gandi'
+import GatsbyJs from './statuspage/gatsbyjs'
 import Github from './statuspage/github'
 import GovCMS from './statuspage/govcms'
 import Hipchat from './statuspage/hipchat'
@@ -214,6 +215,7 @@ const allServices = new Map<string, Service>([
   ['Filestack', new Filestack()],
   ['FiveTran', new FiveTran()],
   ['Gandi', new Gandi()],
+  ['GatsbyJs', new GatsbyJs()],
   ['Github', new Github()],
   ['GovCMS', new GovCMS()],
   ['Hipchat', new Hipchat()],
